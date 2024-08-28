@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "uiwJn8UTUk6mQFQCkuym/0DIvJx6r+yS2Fm0FB55Nw9HqaffP9RAoU6EX0Yeui3rAj0SDRBxaBuSb8RSLaCrtA==",
+  "dgSpecHash": "r7oixrGsQgjzwYruwmnJ3x4uS4hzRqJw5k7zzBlpX9TKSNs7MmSsRkjPgh652mF/nIv6JohvwsHqQpt0uzvgxQ==",
   "success": true,
-  "projectFilePath": "D:\\Divyang22-08-2024\\DivyangCareerApi\\DivyangCareerApi\\DivyangCareerApi.csproj",
+  "projectFilePath": "D:\\Divyang\\DivyangBack\\27-08-2024\\DivyangApi\\Divyang-career-API-main\\DivyangCareerApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\MSI\\.nuget\\packages\\dapper\\2.1.35\\dapper.2.1.35.nupkg.sha512",
     "C:\\Users\\MSI\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",

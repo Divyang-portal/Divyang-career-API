@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Divyang22-08-2024\\DivyangCareerApi\\DivyangCareerApi\\DivyangCareerApi.csproj": {}
+    "D:\\Divyang\\DivyangBack\\27-08-2024\\DivyangApi\\Divyang-career-API-main\\DivyangCareerApi.csproj": {}
   },
   "projects": {
-    "D:\\Divyang22-08-2024\\DivyangCareerApi\\DivyangCareerApi\\DivyangCareerApi.csproj": {
+    "D:\\Divyang\\DivyangBack\\27-08-2024\\DivyangApi\\Divyang-career-API-main\\DivyangCareerApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Divyang22-08-2024\\DivyangCareerApi\\DivyangCareerApi\\DivyangCareerApi.csproj",
+        "projectUniqueName": "D:\\Divyang\\DivyangBack\\27-08-2024\\DivyangApi\\Divyang-career-API-main\\DivyangCareerApi.csproj",
         "projectName": "DivyangCareerApi",
-        "projectPath": "D:\\Divyang22-08-2024\\DivyangCareerApi\\DivyangCareerApi\\DivyangCareerApi.csproj",
+        "projectPath": "D:\\Divyang\\DivyangBack\\27-08-2024\\DivyangApi\\Divyang-career-API-main\\DivyangCareerApi.csproj",
         "packagesPath": "C:\\Users\\MSI\\.nuget\\packages\\",
-        "outputPath": "D:\\Divyang22-08-2024\\DivyangCareerApi\\DivyangCareerApi\\obj\\",
+        "outputPath": "D:\\Divyang\\DivyangBack\\27-08-2024\\DivyangApi\\Divyang-career-API-main\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
