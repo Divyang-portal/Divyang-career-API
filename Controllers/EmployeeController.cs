@@ -17,17 +17,20 @@ namespace DivyangCareerApi.Controllers
             _dapper = dapper;
         }
         [HttpPost(nameof(AddEmployee))]
-        public async Task<Message<int>> AddEmployee([FromBody] Employee Model)
+        public async Task<Message<int>> AddEmployee([FromBody] SignUp Model)
         {
             Message<int> message = new Message<int>();
             var pram = new DynamicParameters();
             try
             {
+                string type = Model.Type;
                 pram.Add("Mode", 1);
-                pram.Add("FirstName", Model.FirstName);
-                pram.Add("LastName", Model.LastName);
-                pram.Add("Username", Model.Username);
+                pram.Add("FirstName", Model.Firstname);
+                pram.Add("LastName", Model.Lastname);
+                pram.Add("UserName", Model.Username);
                 pram.Add("Email", Model.Email);
+                pram.Add("PhoneNumber", Model.PhoneNumber);
+                pram.Add("CountryCode", Model.CountryCode);
                 pram.Add("Password", Model.Password);
                 pram.Add("Result", dbType: DbType.String, size: 200, direction: ParameterDirection.Output);
                 message.Data = await Task.FromResult(_dapper.Post<int>("Usp_Employee", pram));
@@ -80,17 +83,47 @@ namespace DivyangCareerApi.Controllers
             }
             return message;
         }
-        [HttpGet(nameof(logindata))]
-        public async Task<Message<Employee>> logindata(string email, string password)
+        [HttpPost(nameof(CheckEmail))]
+        public async Task<Message<int>> CheckEmail([FromBody] CheckEmail Model)
         {
-            Message<Employee> message = new Message<Employee>();
+            Message<int> message = new Message<int>();
+            var pram = new DynamicParameters();
+            try
+            {
+                pram.Add("Mode", 5);
+                pram.Add("Username", Model.Email);
+                pram.Add("Result", dbType: DbType.String, size: 200, direction: ParameterDirection.Output);
+                message.Data = await Task.FromResult(_dapper.Post<int>("Usp_Employee", pram));
+                var status = Convert.ToString(pram.Get<string>("@Result"));
+                message.ReturnMessage = status;
+            }
+            catch (Exception ex)
+            {
+                message.ReturnMessage = ex.Message;
+            }
+            if (message.Data == 1)
+            {
+                message.IsSuccess = true;
+                message.ReturnMessage = message.ReturnMessage;
+            }
+            else
+            {
+                message.IsSuccess = true;
+                message.ReturnMessage = message.ReturnMessage;
+            }
+            return message;
+        }
+        [HttpGet(nameof(logindata))]
+        public async Task<Message<EmployerDetails>> logindata(string email, string password)
+        {
+            Message<EmployerDetails> message = new Message<EmployerDetails>();
             var param = new DynamicParameters();
             try
             {
                 param.Add("Mode", 3);
                 param.Add("Email", email);
                 param.Add("Password", password);
-                message.Data = await Task.FromResult(_dapper.Get<Employee>("Usp_Employee", param));
+                message.Data = await Task.FromResult(_dapper.Get<EmployerDetails>("Usp_Employee", param));
             }
             catch (Exception ex)
             {

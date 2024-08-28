@@ -1,5 +1,31 @@
 [
   {
+    "ContainingType": "DivyangCareerApi.Controllers.AddCompanyController",
+    "Method": "ApplyJob",
+    "RelativePath": "api/AddCompany/ApplyJob",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Model",
+        "Type": "DivyangCareerApi.Models.CandidateApplyJob",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
     "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
     "Method": "AddCandidate",
     "RelativePath": "api/Candidate/AddCandidate",
@@ -118,7 +144,33 @@
     "Parameters": [
       {
         "Name": "Model",
-        "Type": "DivyangCareerApi.Models.Employee",
+        "Type": "DivyangCareerApi.Models.SignUp",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.EmployeeController",
+    "Method": "CheckEmail",
+    "RelativePath": "api/Employee/CheckEmail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Model",
+        "Type": "DivyangCareerApi.Models.CheckEmail",
         "IsRequired": true
       }
     ],
@@ -181,7 +233,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "DivyangCareerApi.Models.Message\u00601[[DivyangCareerApi.Models.Employee, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "DivyangCareerApi.Models.Message\u00601[[DivyangCareerApi.Models.EmployerDetails, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
