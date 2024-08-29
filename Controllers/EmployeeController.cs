@@ -23,7 +23,7 @@ namespace DivyangCareerApi.Controllers
             var pram = new DynamicParameters();
             try
             {
-                string type = Model.Type;
+                string type = Model.UserType;
                 pram.Add("Mode", 1);
                 pram.Add("FirstName", Model.Firstname);
                 pram.Add("LastName", Model.Lastname);
