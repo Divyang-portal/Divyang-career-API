@@ -28,8 +28,9 @@ namespace DivyangCareerApi.Controllers
                 pram.Add("LastName", Model.LastName);
                 pram.Add("Username", Model.Username);
                 pram.Add("Email", Model.Email);
+                pram.Add("PhoneNumber", Model.PhoneNumber);
+                pram.Add("CountryCode", Model.CountryCode);
                 pram.Add("Password", Model.Password);
-                pram.Add("MobileNo", Model.MobileNo);
                 pram.Add("Result", dbType: DbType.String, size: 200, direction: ParameterDirection.Output);
                 message.Data = await Task.FromResult(_dapper.Post<int>("Usp_Candidate", pram));
                 var status = Convert.ToString(pram.Get<string>("@Result"));
