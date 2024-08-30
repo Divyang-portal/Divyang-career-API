@@ -91,7 +91,7 @@ namespace DivyangCareerApi.Controllers
             try
             {
                 pram.Add("Mode", 5);
-                pram.Add("Username", Model.Email);
+                pram.Add("Email", Model.Email);
                 pram.Add("Result", dbType: DbType.String, size: 200, direction: ParameterDirection.Output);
                 message.Data = await Task.FromResult(_dapper.Post<int>("Usp_Employee", pram));
                 var status = Convert.ToString(pram.Get<string>("@Result"));
@@ -138,6 +138,38 @@ namespace DivyangCareerApi.Controllers
             {
                 message.IsSuccess = true;
                 message.ReturnMessage = "InvalidEmailOrPassword";
+            }
+            return message;
+        }
+        [HttpPost(nameof(ChangeEmplyeePassword))]
+        public async Task<Message<int>> ChangeEmplyeePassword([FromBody] ChangePassword Model)
+        {
+            Message<int> message = new Message<int>();
+            var pram = new DynamicParameters();
+            try
+            {
+                pram.Add("Mode", 6);
+                pram.Add("Email", Model.Email);
+                pram.Add("Password", Model.CurrentPassword);
+                pram.Add("ConfirmPassword", Model.NewPassword);
+                pram.Add("Result", dbType: DbType.String, size: 200, direction: ParameterDirection.Output);
+                message.Data = await Task.FromResult(_dapper.Post<int>("Usp_Employee", pram));
+                var status = Convert.ToString(pram.Get<string>("@Result"));
+                message.ReturnMessage = status;
+            }
+            catch (Exception ex)
+            {
+                message.ReturnMessage = ex.Message;
+            }
+            if (message.Data == 1)
+            {
+                message.IsSuccess = true;
+                message.ReturnMessage = message.ReturnMessage;
+            }
+            else
+            {
+                message.IsSuccess = true;
+                message.ReturnMessage = message.ReturnMessage;
             }
             return message;
         }
