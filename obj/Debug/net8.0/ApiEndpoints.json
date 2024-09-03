@@ -214,6 +214,32 @@
   },
   {
     "ContainingType": "DivyangCareerApi.Controllers.EmployeeController",
+    "Method": "CheckTPAUser",
+    "RelativePath": "api/Employee/CheckTPAUser",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Model",
+        "Type": "DivyangCareerApi.Models.CheckEmail",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.EmployeeController",
     "Method": "CheckUserName",
     "RelativePath": "api/Employee/CheckUserName",
     "HttpMethod": "POST",
@@ -229,6 +255,32 @@
     "ReturnTypes": [
       {
         "Type": "DivyangCareerApi.Models.Message\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.EmployeeController",
+    "Method": "GetEmployerDetails",
+    "RelativePath": "api/Employee/GetEmployerDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[DivyangCareerApi.Models.EmployeeDetails, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -260,6 +312,32 @@
     "ReturnTypes": [
       {
         "Type": "DivyangCareerApi.Models.Message\u00601[[DivyangCareerApi.Models.EmployerDetails, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.EmployeeController",
+    "Method": "UpdateEmployerDetails",
+    "RelativePath": "api/Employee/UpdateEmployerDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Model",
+        "Type": "DivyangCareerApi.Models.EmployeeDetails",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
