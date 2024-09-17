@@ -1,6 +1,32 @@
 [
   {
     "ContainingType": "DivyangCareerApi.Controllers.AddCompanyController",
+    "Method": "AddNewCompany",
+    "RelativePath": "api/AddCompany/AddNewCompany",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Model",
+        "Type": "DivyangCareerApi.Models.AddCompany",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.AddCompanyController",
     "Method": "ApplyJob",
     "RelativePath": "api/AddCompany/ApplyJob",
     "HttpMethod": "POST",
@@ -10,6 +36,222 @@
       {
         "Name": "Model",
         "Type": "DivyangCareerApi.Models.CandidateApplyJob",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.AddCompanyController",
+    "Method": "BindCompanySize",
+    "RelativePath": "api/AddCompany/BindCompanySize",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Collections.Generic.List\u00601[[DivyangCareerApi.Models.CompanySize, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.AddCompanyController",
+    "Method": "BindDistrict",
+    "RelativePath": "api/AddCompany/BindDistrict",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "StateId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Collections.Generic.List\u00601[[DivyangCareerApi.Models.District, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.AddCompanyController",
+    "Method": "BindState",
+    "RelativePath": "api/AddCompany/BindState",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Collections.Generic.List\u00601[[DivyangCareerApi.Models.State, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.AddCompanyController",
+    "Method": "CompanyCategories",
+    "RelativePath": "api/AddCompany/CompanyCategories",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Collections.Generic.List\u00601[[DivyangCareerApi.Models.CompanyCategories, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.AddCompanyController",
+    "Method": "DeleteCompany",
+    "RelativePath": "api/AddCompany/DeleteCompany",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "CompanyId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.AddCompanyController",
+    "Method": "GetAllCompanyDataForDetails",
+    "RelativePath": "api/AddCompany/GetAllCompanyDataForDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[DivyangCareerApi.Models.AddCompany, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.AddCompanyController",
+    "Method": "GetCompanyForEdit",
+    "RelativePath": "api/AddCompany/GetCompanyForEdit",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[DivyangCareerApi.Models.AddCompany, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.AddCompanyController",
+    "Method": "GetCompanyForListPage",
+    "RelativePath": "api/AddCompany/GetCompanyForListPage",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Collections.Generic.List\u00601[[DivyangCareerApi.Models.AddCompany, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.AddCompanyController",
+    "Method": "UpdateNewCompany",
+    "RelativePath": "api/AddCompany/UpdateNewCompany",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Model",
+        "Type": "DivyangCareerApi.Models.AddCompany",
         "IsRequired": true
       }
     ],
@@ -53,6 +295,125 @@
   },
   {
     "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "BindCities",
+    "RelativePath": "api/Candidate/BindCities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "StateId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "District",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "SubDistrict",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Collections.Generic.List\u00601[[DivyangCareerApi.Models.Cities, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "BindSubDistrict",
+    "RelativePath": "api/Candidate/BindSubDistrict",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "StateId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "DistrictId",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Collections.Generic.List\u00601[[DivyangCareerApi.Models.SubDistrict, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "ChangeCandidatePassword",
+    "RelativePath": "api/Candidate/ChangeCandidatePassword",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Model",
+        "Type": "DivyangCareerApi.Models.ChangePassword",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "CheckEmailUpdate",
+    "RelativePath": "api/Candidate/CheckEmailUpdate",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Model",
+        "Type": "DivyangCareerApi.Models.CheckEmail",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
     "Method": "CheckUserName",
     "RelativePath": "api/Candidate/CheckUserName",
     "HttpMethod": "POST",
@@ -68,6 +429,502 @@
     "ReturnTypes": [
       {
         "Type": "DivyangCareerApi.Models.Message\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "DisabilityUpdateCandidateDetails",
+    "RelativePath": "api/Candidate/DisabilityUpdateCandidateDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Model",
+        "Type": "DivyangCareerApi.Models.CandidateDisablityInfoDetails",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "EducationUpdateCandidateDetails",
+    "RelativePath": "api/Candidate/EducationUpdateCandidateDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Model",
+        "Type": "DivyangCareerApi.Models.CandidateEducationDetails",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "ExperienceUpdateCandidateDetails",
+    "RelativePath": "api/Candidate/ExperienceUpdateCandidateDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Model",
+        "Type": "DivyangCareerApi.Models.CandidateExperienceDetails",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "GetAddressSubType",
+    "RelativePath": "api/Candidate/GetAddressSubType",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Collections.Generic.List\u00601[[DivyangCareerApi.Models.Gender, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "GetAddressType",
+    "RelativePath": "api/Candidate/GetAddressType",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Collections.Generic.List\u00601[[DivyangCareerApi.Models.Gender, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "GetBoardUniversities",
+    "RelativePath": "api/Candidate/GetBoardUniversities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Collections.Generic.List\u00601[[DivyangCareerApi.Models.Language, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "GetCastes",
+    "RelativePath": "api/Candidate/GetCastes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Collections.Generic.List\u00601[[DivyangCareerApi.Models.Gender, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "GetCourseNature",
+    "RelativePath": "api/Candidate/GetCourseNature",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Collections.Generic.List\u00601[[DivyangCareerApi.Models.Gender, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "GetCurrentEmployerSector",
+    "RelativePath": "api/Candidate/GetCurrentEmployerSector",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Collections.Generic.List\u00601[[DivyangCareerApi.Models.Language, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "GetDisabilityType",
+    "RelativePath": "api/Candidate/GetDisabilityType",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Collections.Generic.List\u00601[[DivyangCareerApi.Models.Language, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "GetEducation",
+    "RelativePath": "api/Candidate/GetEducation",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "HighestEducationAttainedID",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Collections.Generic.List\u00601[[DivyangCareerApi.Models.Language, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "GetEmploymentStatus",
+    "RelativePath": "api/Candidate/GetEmploymentStatus",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Collections.Generic.List\u00601[[DivyangCareerApi.Models.Language, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "GetGender",
+    "RelativePath": "api/Candidate/GetGender",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Collections.Generic.List\u00601[[DivyangCareerApi.Models.Gender, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "GetGradeTypesOptions",
+    "RelativePath": "api/Candidate/GetGradeTypesOptions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Collections.Generic.List\u00601[[DivyangCareerApi.Models.Language, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "GetHighestEducationAttained",
+    "RelativePath": "api/Candidate/GetHighestEducationAttained",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Collections.Generic.List\u00601[[DivyangCareerApi.Models.Language, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "GetLanguage",
+    "RelativePath": "api/Candidate/GetLanguage",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Collections.Generic.List\u00601[[DivyangCareerApi.Models.Language, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "GetMaritalStatus",
+    "RelativePath": "api/Candidate/GetMaritalStatus",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Collections.Generic.List\u00601[[DivyangCareerApi.Models.Language, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "GetMonth",
+    "RelativePath": "api/Candidate/GetMonth",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Collections.Generic.List\u00601[[DivyangCareerApi.Models.Language, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "GetReligions",
+    "RelativePath": "api/Candidate/GetReligions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Collections.Generic.List\u00601[[DivyangCareerApi.Models.Language, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "GetSpecializations",
+    "RelativePath": "api/Candidate/GetSpecializations",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "EducationID",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Collections.Generic.List\u00601[[DivyangCareerApi.Models.Language, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "GetTerritoryTypes",
+    "RelativePath": "api/Candidate/GetTerritoryTypes",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Collections.Generic.List\u00601[[DivyangCareerApi.Models.Gender, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "GetUIDType",
+    "RelativePath": "api/Candidate/GetUIDType",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Collections.Generic.List\u00601[[DivyangCareerApi.Models.Language, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]], System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "GetUserDetails",
+    "RelativePath": "api/Candidate/GetUserDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "email",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[DivyangCareerApi.Models.UserProfile, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -99,6 +956,32 @@
     "ReturnTypes": [
       {
         "Type": "DivyangCareerApi.Models.Message\u00601[[DivyangCareerApi.Models.CandidateSignUp, DivyangCareerApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.CandidateController",
+    "Method": "UpdateCandidateDetails",
+    "RelativePath": "api/Candidate/UpdateCandidateDetails",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Model",
+        "Type": "DivyangCareerApi.Models.UserProfile",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -190,6 +1073,32 @@
     "ContainingType": "DivyangCareerApi.Controllers.EmployeeController",
     "Method": "CheckEmail",
     "RelativePath": "api/Employee/CheckEmail",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Model",
+        "Type": "DivyangCareerApi.Models.CheckEmail",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "DivyangCareerApi.Models.Message\u00601[[System.Int32, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "DivyangCareerApi.Controllers.EmployeeController",
+    "Method": "CheckEmailUpdate",
+    "RelativePath": "api/Employee/CheckEmailUpdate",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -385,6 +1294,7 @@
         ],
         "StatusCode": 200
       }
-    ]
+    ],
+    "EndpointName": "GetWeatherForecast"
   }
 ]

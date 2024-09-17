@@ -1,10 +1,14 @@
-﻿namespace DivyangCareerApi.Models
+﻿using System.Web.Mvc;
+
+namespace DivyangCareerApi.Models
 {
     public class AddCompany
     {
-        public int EmployerId { get; set; }
+        public int Id { get; set; }
+        public string EmployerId { get; set; }
         public string CompanyName { get; set; }
         public string CompanyCategories { get; set; }
+        [AllowHtml]
         public string CompanyAboutUs { get; set; }
         public string CompanyWebsite { get; set; }
         public string PhoneNumber { get; set; }
@@ -19,7 +23,8 @@
         public string InstagramUrl { get; set; }
         public string GalleryImage { get; set; }
         public string State { get; set; }
-        public string City { get; set; }
+        public string District { get; set; }
         public string CompanyFullAddress { get; set; }
+        public string PhoneCountryCode { get; set; }
     }
 }

@@ -270,5 +270,36 @@ namespace DivyangCareerApi.Controllers
             }
             return message;
         }
+        [HttpPost(nameof(CheckEmailUpdate))]
+        public async Task<Message<int>> CheckEmailUpdate([FromBody] CheckEmail Model)
+        {
+            Message<int> message = new Message<int>();
+            var pram = new DynamicParameters();
+            try
+            {
+                pram.Add("Mode", 11);
+                pram.Add("Email", Model.Email);
+                pram.Add("CurrentEmail", Model.CurrentEmail);
+                pram.Add("Result", dbType: DbType.String, size: 200, direction: ParameterDirection.Output);
+                message.Data = await Task.FromResult(_dapper.Post<int>("Usp_Employee", pram));
+                var status = Convert.ToString(pram.Get<string>("@Result"));
+                message.ReturnMessage = status;
+            }
+            catch (Exception ex)
+            {
+                message.ReturnMessage = ex.Message;
+            }
+            if (message.Data == 1)
+            {
+                message.IsSuccess = true;
+                message.ReturnMessage = message.ReturnMessage;
+            }
+            else
+            {
+                message.IsSuccess = true;
+                message.ReturnMessage = message.ReturnMessage;
+            }
+            return message;
+        }
     }
 }

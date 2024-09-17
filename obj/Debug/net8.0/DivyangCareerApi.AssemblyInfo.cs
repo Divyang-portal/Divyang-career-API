@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DivyangCareerApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3bbe235f8db0d390d75f2997814ac701bd8c2b70")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d2d4c1e5480cdca111748ee2fb615974fd91af1")]
 [assembly: System.Reflection.AssemblyProductAttribute("DivyangCareerApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DivyangCareerApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

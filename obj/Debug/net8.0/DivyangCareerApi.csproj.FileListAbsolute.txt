@@ -84,7 +84,14 @@ D:\Divyang\DivyangBack\27-08-2024\DivyangApi\Divyang-career-API-main\bin\Debug\n
 D:\Divyang\DivyangBack\27-08-2024\DivyangApi\Divyang-career-API-main\bin\Debug\net8.0\DivyangCareerApi.dll
 D:\Divyang\DivyangBack\27-08-2024\DivyangApi\Divyang-career-API-main\bin\Debug\net8.0\DivyangCareerApi.pdb
 D:\Divyang\DivyangBack\27-08-2024\DivyangApi\Divyang-career-API-main\bin\Debug\net8.0\Dapper.dll
+D:\Divyang\DivyangBack\27-08-2024\DivyangApi\Divyang-career-API-main\bin\Debug\net8.0\System.Web.Mvc.dll
+D:\Divyang\DivyangBack\27-08-2024\DivyangApi\Divyang-career-API-main\bin\Debug\net8.0\System.Web.Razor.dll
+D:\Divyang\DivyangBack\27-08-2024\DivyangApi\Divyang-career-API-main\bin\Debug\net8.0\System.Web.Helpers.dll
+D:\Divyang\DivyangBack\27-08-2024\DivyangApi\Divyang-career-API-main\bin\Debug\net8.0\System.Web.WebPages.Deployment.dll
+D:\Divyang\DivyangBack\27-08-2024\DivyangApi\Divyang-career-API-main\bin\Debug\net8.0\System.Web.WebPages.Razor.dll
+D:\Divyang\DivyangBack\27-08-2024\DivyangApi\Divyang-career-API-main\bin\Debug\net8.0\System.Web.WebPages.dll
 D:\Divyang\DivyangBack\27-08-2024\DivyangApi\Divyang-career-API-main\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Divyang\DivyangBack\27-08-2024\DivyangApi\Divyang-career-API-main\bin\Debug\net8.0\Microsoft.Web.Infrastructure.dll
 D:\Divyang\DivyangBack\27-08-2024\DivyangApi\Divyang-career-API-main\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
 D:\Divyang\DivyangBack\27-08-2024\DivyangApi\Divyang-career-API-main\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
 D:\Divyang\DivyangBack\27-08-2024\DivyangApi\Divyang-career-API-main\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
