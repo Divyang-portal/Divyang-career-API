@@ -12,6 +12,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
     c.SwaggerDoc("v1", new OpenApiInfo { Title = "DivyangCareerApi", Version = "v1" });
+
+    // Adding ApiKey scheme
     c.AddSecurityDefinition("ApiKey", new OpenApiSecurityScheme
     {
         Description = "ApiKey must appear in header",
@@ -20,6 +22,7 @@ builder.Services.AddSwaggerGen(c =>
         In = ParameterLocation.Header,
         Scheme = "ApiKeyScheme"
     });
+
     var key = new OpenApiSecurityScheme()
     {
         Reference = new OpenApiReference
@@ -29,10 +32,12 @@ builder.Services.AddSwaggerGen(c =>
         },
         In = ParameterLocation.Header
     };
+
     var requirement = new OpenApiSecurityRequirement
-                    {
-                             { key, new List<string>() }
-                    };
+    {
+        { key, new List<string>() }
+    };
+
     c.AddSecurityRequirement(requirement);
 });
 builder.Services.AddScoped<IDapper,Dappers>();
@@ -45,6 +50,17 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+// Configure the HTTP request pipeline.
+//if (app.Environment.IsDevelopment())
+//{
+//    app.UseDeveloperExceptionPage(); // Enable detailed error pages
+//}
+
+//app.UseSwagger();
+//app.UseSwaggerUI(c =>
+//{
+//    c.SwaggerEndpoint("/swagger/v1/swagger.json", "DivyangCareerApi v1");
+//});
 
 app.UseAuthorization();
 app.UseMiddleware<ApiKeyMiddleware>();
